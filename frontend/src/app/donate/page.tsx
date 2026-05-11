@@ -2,17 +2,14 @@
 
 import { useState } from "react";
 import { useAuth } from "@/lib/AuthContext";
-import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { CheckCircle, MapPin, Clock } from "lucide-react";
-import { ROLES, Role } from "@/lib/mockData";
+import { CheckCircle } from "lucide-react";
 
 const foodCategories = ["Cooked Meals", "Packaged Food", "Fresh Produce", "Dairy", "Baked Goods", "Beverages"];
 
 export default function DonatePage() {
   const { user } = useAuth();
-  const router = useRouter();
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
@@ -132,7 +129,7 @@ export default function DonatePage() {
 
               {!user && (
                 <div className="p-4 bg-primary/5 border border-primary/20 rounded-xl">
-                  <p className="text-sm text-textGray">You're donating as a guest. <Link href="/register?role=Donor" className="text-primary underline">Create an account</Link> to track your impact.</p>
+                  <p className="text-sm text-textGray">You&apos;re donating as a guest. <Link href="/register?role=Donor" className="text-primary underline">Create an account</Link> to track your impact.</p>
                 </div>
               )}
 

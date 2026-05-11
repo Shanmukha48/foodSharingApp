@@ -16,7 +16,7 @@ export default function Footer() {
               An intelligent food redistribution platform transforming excess into impact.
               Aligning with UN Sustainable Development Goal 12.3.
             </p>
-            <p className="text-xl font-medium text-white italic">"Share Your Byte. Save a Life."</p>
+            <p className="text-xl font-medium text-white italic">&ldquo;Share Your Byte. Save a Life.&rdquo;</p>
           </div>
 
           <div>
